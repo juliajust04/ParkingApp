@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "289830996870",
+    "project_id": "parking-app-katowice",
+    "storage_bucket": "parking-app-katowice.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:289830996870:android:a8ca1942c0cd848eb2fa07",
+        "android_client_info": {
+          "package_name": "com.example.parkingapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAD-semDdWXRUrYRgF8U6HaofXMaLrdvuc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
