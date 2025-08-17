@@ -1,9 +1,16 @@
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.google.gms.google.services)
-    id("com.google.android.libraries.mapsplatform.secrets-gradle-plugin")
 }
+
+val localProps = Properties().apply {
+    val f = rootProject.file("local.properties")
+    if (f.exists()) f.inputStream().use { load(it) }
+}
+val mapsKey: String = localProps.getProperty("GOOGLE_MAPS_API_KEY") ?: ""
 
 android {
     namespace = "com.example.parkingapp"
@@ -15,8 +22,12 @@ android {
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        if (mapsKey.isBlank()) {
+            throw GradleException("Brak GOOGLE_MAPS_API_KEY w local.properties")
+        }
+        resValue("string", "google_maps_key", mapsKey)
     }
 
     buildTypes {
@@ -32,16 +43,11 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
-    kotlinOptions {
-        jvmTarget = "11"
-    }
-    buildFeatures {
-        viewBinding = true
-    }
+    kotlinOptions { jvmTarget = "11" }
+    buildFeatures { viewBinding = true }
 }
 
 dependencies {
-    implementation(libs.google.secrets.gradle.plugin)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -56,4 +62,5 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     implementation(libs.play.services.maps)
     implementation(libs.google.maps.compose)
+    implementation(libs.google.places)
 }
