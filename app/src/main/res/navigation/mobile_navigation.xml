@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.example.parkingapp.ui.info.NotificationsFragment"
+        android:name="com.example.parkingapp.ui.info.InfoFragment"
         android:label="@string/title_info"
         tools:layout="@layout/fragment_info" />
 </navigation>
