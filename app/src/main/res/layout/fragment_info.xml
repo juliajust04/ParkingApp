@@ -11,13 +11,14 @@
         android:orientation="vertical"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
-        android:paddingTop="32dp">
+        android:paddingTop="20dp">
 
         <TextView
             android:id="@+id/tvTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/info_title"
+            android:textStyle="bold"
             android:textAppearance="?attr/textAppearanceHeadline6"
             android:paddingBottom="12dp" />
 
@@ -26,6 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/info_about"
+            android:justificationMode="inter_word"
             android:paddingBottom="20dp" />
 
         <TextView
@@ -34,6 +36,7 @@
             android:layout_height="wrap_content"
             android:text="@string/info_how_title"
             android:textStyle="bold"
+            android:textSize="18sp"
             android:paddingBottom="8dp" />
 
         <TextView
@@ -41,6 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/info_howto"
+
             android:paddingBottom="20dp" />
 
         <TextView
@@ -49,6 +53,7 @@
             android:layout_height="wrap_content"
             android:text="@string/info_legend_title"
             android:textStyle="bold"
+            android:textSize="18sp"
             android:paddingBottom="8dp" />
 
         <TextView
@@ -64,6 +69,7 @@
             android:layout_height="wrap_content"
             android:text="@string/info_privacy_title"
             android:textStyle="bold"
+            android:textSize="18sp"
             android:paddingBottom="8dp" />
 
         <TextView
@@ -71,6 +77,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/info_privacy"
+            android:justificationMode="inter_word"
             android:paddingBottom="20dp" />
 
     </LinearLayout>

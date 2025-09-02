@@ -3,22 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_list">
 
     <fragment
-        android:id="@+id/navigation_home"
+        android:id="@+id/navigation_list"
         android:name="com.example.parkingapp.ui.list.HomeFragment"
         android:label="Lista parkingów"
         tools:layout="@layout/fragment_list" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_maps"
         android:name="com.example.parkingapp.ui.maps.DashboardFragment"
         android:label="@string/title_maps"
         tools:layout="@layout/fragment_maps" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_info"
         android:name="com.example.parkingapp.ui.info.InfoFragment"
         android:label="@string/title_info"
         tools:layout="@layout/fragment_info" />

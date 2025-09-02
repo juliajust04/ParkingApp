@@ -1,22 +1,14 @@
 <resources>
     <string name="app_name">ParkingApp</string>
-    <string name="title_list">List</string>
-    <string name="title_maps">Maps</string>
-    <string name="title_info">Info</string>
+    <string name="title_list">Lista</string>
+    <string name="title_maps">Mapa</string>
+    <string name="title_info">Informacje</string>
     <string name="info_title">O aplikacji</string>
     <string name="info_about">ParkingApp pomaga znaleźć parking w Katowicach i sprawdzić, ile jest na nim wolnych miejsc. Informacje pochodzą od społeczności użytkowników.</string>
     <string name="info_how_title">Jak korzystać</string>
-    <string name="info_howto">
-    1. Otwórz zakładkę „Mapa” lub „Lista”.\n
-    2. Kliknij parking, aby zobaczyć szczegóły.\n
-    3. Przytrzymaj pozycję, aby zgłosić aktualne obłożenie.
-    </string>
+    <string name="info_howto">1. Otwórz zakładkę „Mapa” lub „Lista”.\n2. Kliknij parking, aby zobaczyć szczegóły.\n3. Przytrzymaj pozycję, aby zgłosić aktualne obłożenie.</string>
     <string name="info_legend_title">Legenda</string>
-    <string name="info_legend">
-    \uD83D\uDFE2 Dużo wolnych miejsc\n
-    \uD83D\uDFE1 Średnie obłożenie\n
-    \uD83D\uDD34 Prawie pełny
-</string>
+    <string name="info_legend">\uD83D\uDFE2 Dużo wolnych miejsc\n\uD83D\uDFE1 Średnie obłożenie\n\uD83D\uDD34 Prawie pełny</string>
     <string name="info_privacy_title">Prywatność</string>
     <string name="info_privacy">Twoja lokalizacja służy wyłącznie do wyszukiwania parkingów w pobliżu i nie jest zapisywana w bazie. Zgłoszenia są anonimowe.</string>
 </resources>
